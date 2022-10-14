@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+const date = new Date();
+const color='green';
+---
+
+<Layout title="Astro about page.">
+    <main>
+        <h1 class='text-3xl font-bold'>About page</h1>
+        <span style={{color}}>{date.toLocaleDateString()}</span>
+    </main>
+</Layout>
